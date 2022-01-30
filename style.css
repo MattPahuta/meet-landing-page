@@ -6,7 +6,7 @@
 /* ----------------- */
 :root {
   /* colors */
-  --clr-turquoise: 192 37% 48%;
+  --clr-teal: 192 37% 48%;
   --clr-purple: 268 34% 53%;
   --clr-dark: 240 21% 20%;
   --clr-gray: 240 10% 57%;
@@ -25,6 +25,13 @@
 
   /* fonts */
   --ff-serif: 'Red Hat Display', sans-serif;
+
+  /* font weights */
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-700: 700;
+  --fw-900: 900;
+
 }
 
 
@@ -67,9 +74,6 @@ body {
   background-color: hsl( var(--clr-white));
   line-height: 1.6;
   min-height: 100vh;
-  /* display: grid;
-  grid-template-rows: min-content 1fr;
-  overflow-x: hidden; */
 }
 
 img,
@@ -100,6 +104,47 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+/* ------------ */
+/* Colors       */
+/* ------------ */
+
+.text-white { color: hsl( var(--clr-white)); }
+.text-dark { color: hsl( var(--clr-dark)); }
+.text-accent { color: hsl( var(--clr-gray)); }
+.text-overline { color: hsl( var(--clr-teal)); }
+
+
+/* ------------ */
+/* Typograpghy  */
+/* ------------ */
+
+/* font sizes */
+.fs-700 { font-size: var(--fs-700); }
+.fs-600 { font-size: var(--fs-600); }
+.fs-500 { font-size: var(--fs-500); }
+.fs-400 { font-size: var(--fs-400); }
+.fs-300 { font-size: var(--fs-300); }
+/* font weights */
+.fw-400 { font-weight: var(--fw-400);}
+.fw-500 { font-weight: var(--fw-500);}
+.fw-700 { font-weight: var(--fw-700);}
+.fw-900 { font-weight: var(--fw-900);}
+
+.uppercase { text-transform: uppercase; }
+
+.fs-700,
+.fs-600 {
+  line-height: 1.1;
+}
+
+
+h1,
+h2 {
+  font-weight: 700;
+}
+
+
 
 /* --------------------- */
 /*    Utility classes    */
@@ -147,7 +192,7 @@ select {
 .container {
   padding-inline: 2em;
   margin-inline: auto;
-  max-width: 70rem;
+  max-width: 80rem;
 }
 
 
@@ -157,53 +202,87 @@ select {
   padding: 2em 0;
 }
 
-
-/* ------------ */
-/* Colors       */
-/* ------------ */
-
-.text-white { color: hsl(var(--clr-white)); }
-.text-dark { color: hsl(var(--clr-dark)); }
-.text-accent { color: hsl(var(--clr-gray)); }
-
-
-/* ------------ */
-/* Typograpghy  */
-/* ------------ */
-
-/* font sizes */
-.fs-700 { font-size: var(--fs-700); }
-.fs-600 { font-size: var(--fs-600); }
-.fs-400 { font-size: var(--fs-400); }
-.fs-500 { font-size: var(--fs-500); }
-.fs-300 { font-size: var(--fs-300); }
-
-.uppercase { text-transform: uppercase; }
-
-.fs-700,
-.fs-600 {
-  line-height: 1.1;
+.number-heading {
+  display: flex;
+  align-items: center;
+  padding-bottom: 2em;
 }
 
+.number-heading h2 {
+  margin-left: .75em;
+}
 
-h1,
-h2 {
+/* flex container */
+.typography-hero {
+  /* heights for design system only */
+  min-height: 300px;
+  max-height: 310px;
+
+  background-image: linear-gradient(hsla(192, 37%, 48%, .85), hsla(192, 37%, 48%, .85)), url(./assets/desktop/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5px;
+  padding: 2em 2em;
+  color: hsl( var(--clr-white));
+  align-items: center;
+  padding: 0 5em;
+}
+
+.typography-hero > * {
+  flex-basis: 100%;
+}
+
+.font,
+.chars {
   font-weight: 700;
 }
+
+.font {
+  font-size: var(--fs-700);
+  line-height: 1;
+}
+
+.chars {
+  letter-spacing: 4.8px;
+}
+
+.font-container {
+  margin-top: 5em;
+  /* padding: 0 1em; */
+  /* grid-template-columns: 52% 45%; */
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(50%, 60%) minmax(30%, 38%);
+  border: 1px solid black;
+}
+
+.font-container p {
+  margin-top: .5em;
+}
+
 
 
 /* ---------------- */
 /* Components       */
 /* ---------------- */
 
+.overlay {
+  /* box-shadow: inset 0 0 30px 60px rgba(21, 15, 100, 0.3); */
+  background: hsl (var(--clr-teal) / .3);
+  overflow: hidden;
+  height: 100%;
+  z-index: 1000;
+}
 
-.number-indicator {
-  font-size: 1.5rem;
-  padding: 0.3em;
-  border: 1px solid hsl( var(--clr-gray) / 1);
+
+.number-indicator-span {
+  font-size: 1rem;
+  display: inline-grid;
+  place-items: center;
+  padding: 0 .75em;
   border-radius: 50%;
+  aspect-ratio: 1;
+  color:hsl( var(--clr-gray) / .9);
+  border: 1px solid hsl(var(--clr-gray) / .9);
+  font-weight: 700;
 }
 
-.number-indicator > * {
-  aspect-ratio: 1;
-}
