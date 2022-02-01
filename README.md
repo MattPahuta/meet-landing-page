@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- [solution URL]()
-- [live site URL]()
+- [solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-css-grid-sdErLR-L6)
+- [live site URL](https://mattpahuta.github.io/meet-landing-page/)
 
 ## My process
 
