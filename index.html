@@ -12,32 +12,41 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body>
-  <div class="container">
+  <div class="wrapper">
 
+   <header class="header">
+     <!-- site logo -->
     <div class="flex flex-center">
       <a class="logo-link" href="index.html">
         <img src="./assets/logo.svg" alt="" class="logo">
       </a>
     </div>
 
-    <header class="grid">
-
-      <div class="img-container">
-        <img src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
+    <!-- site hero section -->
+    <div class="flex hero">
+      <!-- mobile and desktop-left hero images -->
+      <div class="hero-image-1">
+        <img class="hero-image-mobile" src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
+        <img class="hero-image-desktop" src="./assets/desktop/image-hero-left.png" alt="A diverse collection of people's headshots">
       </div>
-
-      <div class="">
-        <div class="flex header-content">
-          <h1>Group Chat for Everyone</h1>
-          <p class="subheading text-accent">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        </div>
-        <div class="flex header-btns">
+      <!-- hero text -->
+      <div class="flex hero-content">
+        <h1>Group Chat for Everyone</h1>
+        <p class="subheading text-accent">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <!-- hero buttons -->
+        <div class="flex hero-buttons">
           <button class="btn btn-primary">Download <span>v1.3</span></button>
           <button class="btn btn-secondary">What is it?</button>
         </div>
       </div>
+      <!-- desktop-right hero image -->
+      <div class="hero-image-2">
+        <img class="hero-image-desktop" src="./assets/desktop/image-hero-right.png" alt="A diverse collection of people's headshots">
+      </div>
 
-    </header>
+    </div>
+
+  </header>
 
     <main>
       <!-- Section divider -->
@@ -74,24 +83,28 @@
         </div>
 
       </section>
-      <!-- Section divider -->
-      <div class="flex section-divider__container">
-        <div class="section-divider__line"></div>
-        <div class="flex section-divider__circle">
-          <div class="section-divider__num fs-300">02</div>
-        </div>
-      </div>
     </main>
 
-    <footer class="flex">
-      <h2 class="">Experience more together</h2>
-      <p class="">Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-      <button class="btn btn-secondary">Download <span>v1.3</span></button>
-      
-    </footer>
+  </div>
+  <!-- section divider -->
+  <div class="flex section-divider__container">
+    <div class="section-divider__line"></div>
+    <div class="flex section-divider__circle">
+      <div class="section-divider__num fs-300">02</div>
+    </div>
+  </div>
 
+  <footer class="flex">
+    
+    <div class="flex footer-content">
+      <div>
+        <h2>Experience more together</h2>
+      </div>
+      <div><p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p></div>
+      <div><button class="btn btn-secondary">Download <span>v1.3</span></button></div>
+    </div>
 
-  </div>   
+  </footer>
 
 </body>
 </html>
