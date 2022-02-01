@@ -1,6 +1,6 @@
 # Meet Landing Page
 
-This is a solution to the [Meet landing page challenge on Frontend Mentor](). 
+This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -11,7 +11,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor]().
 - [My Process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
 - [Author](#author)
 
 ## Overview
@@ -20,12 +19,15 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor]().
 
 Users should be able to:
 
-- View the optimal layout for each of the website's pages depending on their device's screen size
-- See hover states for buttons and links
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshots
 
 ![](./screenshot.jpg)
+
+![Tablet 1](./assets/screenshots/meet-tablet-01.jpg "Tablet size - top")
+![Tablet 2](./assets/screenshots/meet-tablet-02.jpg "Tablet size - bottom")
 
 ### Links
 
@@ -44,11 +46,9 @@ Users should be able to:
 
 ### What I learned
 
-Stuff...
+- A simple wireframe of the site, showing grids and breakpoints, is worth developing before you start the markup and base styles.
+- Keep it simple where you can. Start getting the layout looking right using the most straightforward methods available, then mix in complexity when needed.
 
-### Continued development
-
-Things...
 
 ## Author
 
