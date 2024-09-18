@@ -1,6 +1,3 @@
-/* Meet Landing Page - Frontend Mentor */
-/* *********************************** */
-
 /* ----------------- */
 /* Custom Properties */
 /* ----------------- */
@@ -86,10 +83,7 @@ select {
   font: inherit;
 }
 
-/* ------------ */
 /* Colors       */
-/* ------------ */
-
 .text-white { color: hsl( var(--clr-white)); }
 .text-dark { color: hsl( var(--clr-dark)); }
 .text-accent { color: hsl( var(--clr-gray)); }
@@ -97,9 +91,7 @@ select {
 .secondary-purple { color: hsl( var(--clr-purple)); }
 .secondary-blue { color: hsl( var(--clr-light-blue)); }
 
-/* ------------ */
 /* Typograpghy  */
-/* ------------ */
 
 /* font sizes */
 .fs-700 { font-size: var(--fs-700); }
@@ -114,6 +106,42 @@ select {
 .fw-900 { font-weight: var(--fw-900);}
 
 .uppercase { text-transform: uppercase; }
+
+body {
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr auto auto;
+}
+
+.flex {
+  display: flex;
+  gap: 1rem;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.margin-top {
+  margin-top: 0.5em;
+}
+
+.d-block {
+  display: block;
+}
+
+.padding-sml {
+  padding: 1rem 0;
+}
+
+.text-align-center {
+  text-align: center;
+}
 
 .overline-text {
   color: hsl( var(--clr-teal));
@@ -139,20 +167,6 @@ h2 {
   h2 {
     font-size: 2.5rem;
   }
-}
-
-/* --------------------- */
-/*    Layout             */
-/* --------------------- */
-
-html {
-  height: 100%;
-}
-
-body {
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto auto;
 }
 
 footer {
@@ -219,7 +233,6 @@ header {
   }
 }
 
-/* ~1120px */
 @media (min-width: 70em) {
   .hero {
     flex-direction: row;
@@ -251,39 +264,7 @@ header {
   }
 }
 
-/* --------------------- */
-/*    Utility classes    */
-/* --------------------- */
 
-.flex {
-  display: flex;
-  gap: 1rem;
-}
-
-.flex-center {
-  justify-content: center;
-}
-
-.grid {
-  display: grid;
-  gap: 1rem;
-}
-
-.margin-top {
-  margin-top: 0.5em;
-}
-
-.d-block {
-  display: block;
-}
-
-.padding-sml {
-  padding: 1rem 0;
-}
-
-.text-align-center {
-  text-align: center;
-}
 
 /* ---------------- */
 /* Components       */
