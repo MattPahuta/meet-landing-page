@@ -12,29 +12,28 @@
 </head>
 <body>
   <div class="container">
-
     <header class="header">
-     <div class="flex flex-center">
-       <img src="./assets/logo.svg" alt="" class="logo">
-     </div>
-     <div class="flex hero">
-       <div class="hero-image-1">
-         <img class="hero-image-mobile" src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
-         <img class="hero-image-desktop" src="./assets/desktop/image-hero-left.png" alt="A diverse collection of people's headshots">
-       </div>
-       <div class="flex hero-content">
-         <h1>Group Chat for Everyone</h1>
-         <p class="subheading text-accent">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-         <div class="flex hero-buttons">
-           <button class="btn btn-primary">Download <span>v1.3</span></button>
-           <button class="btn btn-secondary">What is it?</button>
-         </div>
-       </div>
-       <div class="hero-image-2">
-         <img class="hero-image-desktop" src="./assets/desktop/image-hero-right.png" alt="A diverse collection of people's headshots">
-       </div>
-     </div>
-   </header>
+      <img src="./assets/logo.svg" alt="Meet Company logo" class="logo">
+    </header>
+    <section class="hero">
+      <!-- mobile hero or desktop hero image left side -->
+      <picture>
+        <source media="(min-width: 80rem)" srcset="./assets/desktop/image-hero-left.png">
+        <img class="hero-image__mobile" src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
+      </picture>
+
+      <div class="hero__content">
+        <h1>Group Chat for Everyone</h1>
+        <p class="subheading text-accent">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
+        <div class="flex hero-buttons">
+          <button class="btn btn-primary">Download <span>v1.3</span></button>
+          <button class="btn btn-secondary">What is it?</button>
+        </div>
+      </div>
+      <!-- desktop hero image - right side -->
+      <img class="hero-image__desktop-right" src="./assets/desktop/image-hero-right.png" alt="A diverse collection of people's headshots">
+    </section>
+
    <main>
      <div class="flex section-divider__container">
        <div class="section-divider__line"></div>
