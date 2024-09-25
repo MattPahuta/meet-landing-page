@@ -11,11 +11,10 @@
   <title>Frontend Mentor | Meet landing page</title>
 </head>
 <body> 
-  <!-- ToDo: do I need this container? -->
-  <div class="container">
-    <header class="header">
-      <img src="./assets/logo.svg" alt="Meet Company logo" class="logo">
-    </header>
+  <header class="header">
+    <img src="./assets/logo.svg" alt="Meet Company logo" class="logo">
+  </header>
+  <main class="main">
     <section class="hero">
       <!-- mobile hero or desktop hero image left side -->
       <picture>
@@ -26,7 +25,7 @@
       <div class="hero__content">
         <h1>Group Chat for Everyone</h1>
         <p class="subheading">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
-        <div class="flex hero-buttons">
+        <div class="hero-buttons">
           <button class="btn btn-primary">Download <span>v1.3</span></button>
           <button class="btn btn-secondary">What is it?</button>
         </div>
@@ -34,13 +33,11 @@
       <!-- desktop hero image - right side -->
       <img class="hero-image__desktop-right" src="./assets/desktop/image-hero-right.png" alt="A diverse collection of people's headshots">
     </section>
-
-   <main class="main">
-     <section>
-       <div class="flex section-divider__container">
+    <section>
+       <div class="section-divider__container">
          <div class="section-divider__line"></div>
-         <div class="flex section-divider__circle">
-           <div class="section-divider__num fs-300">01</div>
+         <div class="section-divider__circle">
+           <div class="section-divider__num">01</div>
          </div>
        </div>
        <!-- image gallery -->
@@ -53,28 +50,22 @@
        <div class="main__text-content">
          <p class="accent-text">Built for modern use</p>
          <h2>Smarter meetings, all in one place</h2>
-         <p>Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>  
+         <p class="main__text-description">Send messages, share files, show your screen, and record your meetings — all in one workspace. Control who can join with invite-only team access, data encryption, and data export.</p>  
        </div>
      </section>
-   </main>
-  </div>
-
-  <div class="flex section-divider__container">
-    <div class="section-divider__line"></div>
-    <div class="flex section-divider__circle">
-      <div class="section-divider__num fs-300">02</div>
-    </div>
-  </div>
-
-  <footer class=" footer flex">
-    <div class="flex footer__content">
-      <div>
-        <h2>Experience more together</h2>
+  </main>
+  <footer class="footer">
+    <div class="section-divider__container">
+      <div class="section-divider__line"></div>
+      <div class="section-divider__circle">
+        <div class="section-divider__num">02</div>
       </div>
-      <div><p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p></div>
-      <div><button class="btn btn-secondary">Download <span>v1.3</span></button></div>
+    </div>
+    <div class="footer__content">
+      <h2>Experience more together</h2>
+      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+      <button class="btn btn-secondary">Download <span>v1.3</span></button>
     </div>
   </footer>
-
 </body>
 </html>
