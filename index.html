@@ -17,11 +17,10 @@
   <main class="main">
     <section class="hero">
       <!-- mobile hero or desktop hero image left side -->
-      <picture>
-        <source media="(min-width: 80rem)" srcset="./assets/desktop/image-hero-left.png">
-        <img class="hero-image__mobile" src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
+      <picture class="hero-picture__desktop-left">
+        <source media="(min-width: 70rem)" srcset="./assets/desktop/image-hero-left.png">
+        <img class="hero-image__mobile hero-image__desktop-left" src="./assets/tablet/image-hero.png" alt="A diverse collection of people's headshots">
       </picture>
-
       <div class="hero__content">
         <h1>Group Chat for Everyone</h1>
         <p class="subheading">Meet makes it easy to connect with others face-to-face virtually and collaborate across any device.</p>
@@ -63,9 +62,11 @@
       </div>
     </div>
     <div class="footer__content">
-      <h2>Experience more together</h2>
-      <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
-      <button class="btn btn-secondary">Download <span>v1.3</span></button>
+      <div class="footer__content-inner">
+        <h2>Experience more together</h2>
+        <p>Stay connected with reliable HD meetings and unlimited one-on-one and group video sessions.</p>
+        <button class="btn btn-secondary">Download <span>v1.3</span></button>
+      </div>
     </div>
   </footer>
 </body>
