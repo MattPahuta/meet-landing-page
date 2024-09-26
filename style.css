@@ -317,6 +317,9 @@ h1, h2, h3 {
 }
 
 @media (min-width: 70rem) {
+  .header {
+    padding-top: var(--spacing-1000);
+  }
   .hero {
     grid-template-columns: repeat(3, 1fr);
     gap: var(--spacing-300);
@@ -342,6 +345,9 @@ h1, h2, h3 {
     display: block;
     justify-self: end;
     margin-right: -1.75rem;
+  }
+  .about {
+    padding-bottom: var(--spacing-900);
   }
 }
 
