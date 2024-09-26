@@ -29,12 +29,12 @@
   --spacing-300: 1.5rem;
   --spacing-400: 2rem;
   --spacing-500: 2.5rem;
-  --spacing-600: 3rem; /* 48px */
-  --spacing-700: 3.5rem; /* 56px; */
-  --spacing-800: 4rem; /* 64px; */
-  --spacing-900: 4.5rem; /* 72px; */
-  --spacing-1000: 5rem; /* 80px; */
-  --spacing-1400: 7rem; /* 112px */
+  --spacing-600: 3rem; 
+  --spacing-700: 3.5rem;
+  --spacing-800: 4rem;
+  --spacing-900: 4.5rem;
+  --spacing-1000: 5rem;
+  --spacing-1400: 7rem;
 }
 /* RESET */
 /* Josh Comeau custom css reset */

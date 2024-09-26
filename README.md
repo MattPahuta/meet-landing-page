@@ -10,7 +10,6 @@ This is a solution to the [Meet landing page challenge on Frontend Mentor](https
   - [Links](#links)
 - [My Process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Overview
@@ -22,17 +21,14 @@ Users should be able to:
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
 
-### Screenshots
+### Screenshot
 
-![](./screenshot.jpg)
-
-![Tablet 1](./assets/screenshots/meet-tablet-01.jpg "Tablet size - top")
-![Tablet 2](./assets/screenshots/meet-tablet-02.jpg "Tablet size - bottom")
+![](./project-ss.png)
 
 ### Links
 
 - [solution URL](https://www.frontendmentor.io/solutions/responsive-landing-page-using-flexbox-and-css-grid-sdErLR-L6)
-- [live site URL](https://mattpahuta.github.io/meet-landing-page/)
+- [live site URL](https://meet-landing-page-steel.vercel.app/)
 
 ## My process
 
@@ -44,13 +40,9 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 
-### What I learned
-
-- A simple wireframe of the site, showing grids and breakpoints, is worth developing before you start the markup and base styles.
-- Keep it simple where you can. Start getting the layout looking right using the most straightforward methods available, then mix in complexity when needed.
-
-
 ## Author
 
-- Frontend Mentor - [@MattPahuta](https://www.frontendmentor.io/profile/MattPahuta)
-- Twitter - [@MattPahuta](https://twitter.com/MattPahuta)
+- Website - [Matt Pahuta](https://www.mattpahuta.com)
+- Frontend Mentor - [@mattpahuta](https://www.frontendmentor.io/profile/MattPahuta)
+- Twitter - [@mattpahuta](https://www.twitter.com/MattPahuta)
+- LinkedIn - [Matt Pahuta](www.linkedin.com/in/mattpahuta)
